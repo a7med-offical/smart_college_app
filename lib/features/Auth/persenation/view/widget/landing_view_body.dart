@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:smart_college_app/core/utils/Style.dart';
+import 'Button_landing_widget.dart';
 
 class LandingViewBody extends StatelessWidget {
   const LandingViewBody({super.key});
@@ -8,53 +8,47 @@ class LandingViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          const Spacer(
-            flex: 1,
-          ),
-          Image.asset('Assets/images/join.png'),
-          const Text(
-            'Smart College App',
-            style: Style.font24,
-          ),
-          const Text(
-            'Study Updated ,Anytime Anywhose',
-            style: Style.font15,
-          ),
-          const Spacer(
-            flex: 2,
-          ),
-          Row(
-            children: [
-              MaterialButton(
-                onPressed: null,
-                child: const Text('Login'),
-                shape: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+        child: Column(
+          children: [
+            const Spacer(
+              flex: 1,
+            ),
+            Image.asset('Assets/images/join.png'),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text(
+              'Smart College App',
+              style: Style.font24,
+            ),
+            const Text(
+              'Study Updated ,Anytime Anywhose',
+              style: Style.font15,
+            ),
+            const Spacer(
+              flex: 2,
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ClickedButton(
+                  text: 'Login',
                 ),
-                color: Colors.white,
-                height: 100,
-                minWidth: MediaQuery.of(context).size.width * 0.4,
-              ),
-              MaterialButton(
-                focusColor: Colors.red,
-                onPressed: null,
-                child: const Text('Login'),
-                shape: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                SizedBox(
+                  width: 10,
                 ),
-                color: Colors.white,
-                
-                height: 100,
-                minWidth: MediaQuery.of(context).size.width * 0.4,
-              )
-            ],
-          ),
-           const Spacer(
-            flex: 1,
-          ),
-        ],
+                ClickedButton(
+                  text: 'Register',
+                ),
+              ],
+            ),
+            const Spacer(
+              flex: 1,
+            ),
+          ],
+        ),
       ),
     );
   }

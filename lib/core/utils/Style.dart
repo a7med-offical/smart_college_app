@@ -5,6 +5,8 @@ class Style {
     fontSize: 20,
     fontWeight: FontWeight.w700,
     color: Colors.white,
+        fontFamily: 'PoetsenOne-Regular',
+
   );
 
    static const font24 = TextStyle(
@@ -19,6 +21,14 @@ class Style {
     fontSize: 15,
     fontWeight: FontWeight.bold,
     color: Colors.grey,
+    fontFamily: 'PoetsenOne-Regular',
+
+  );
+
+   static const font18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
     fontFamily: 'PoetsenOne-Regular',
 
   );
