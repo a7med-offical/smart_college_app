@@ -30,17 +30,23 @@ class LandingViewBody extends StatelessWidget {
             const Spacer(
               flex: 2,
             ),
-            const Row(
+             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ClickedButton(
                   text: 'Login',
+                  height: 60,
+                  color: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
-                SizedBox(
+             const   SizedBox(
                   width: 10,
                 ),
                 ClickedButton(
                   text: 'Register',
+                   height: 60,
+                  color: Colors.white,
+                  width: MediaQuery.of(context).size.width * 0.45,
                 ),
               ],
             ),

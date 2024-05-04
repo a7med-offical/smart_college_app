@@ -2,22 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:smart_college_app/core/utils/Style.dart';
 
 class ClickedButton extends StatelessWidget {
-  const ClickedButton({
-    super.key,
-    required this.text
-  });
+  const ClickedButton({super.key, required this.text,required this.color, required this.height, required this.width});
 
- final String text;
+  final String text;
+  final Color color;
+  final double height;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
-      width: MediaQuery.of(context).size.width * 0.45,
-      child:  Center(child: Text(text,style: Style.font18,)),
+      height: height,
+      width:width,
+      child: Center(
+          child: Text(
+        text,
+        style: Style.font18,
+      )),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
-          color: Colors.white),
+          borderRadius: BorderRadius.circular(5), color: color),
     );
   }
 }

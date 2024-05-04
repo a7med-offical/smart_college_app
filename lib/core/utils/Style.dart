@@ -10,12 +10,20 @@ class Style {
   );
 
    static const font24 = TextStyle(
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: FontWeight.bold,
     color: Colors.white,
     fontFamily: 'PoetsenOne-Regular',
 
   );
+   static const font28 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    fontFamily: 'PoetsenOne-Regular',
+
+  );
+
 
    static const font15 = TextStyle(
     fontSize: 15,
