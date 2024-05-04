@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'features/Auth/persenation/view/login_view.dart';
-import 'features/Auth/persenation/view/reset_pass.dart';
+import 'features/Home/persentation/view/home_view.dart';
 
 void main() {
   runApp(const CollegeApp());
@@ -12,7 +10,7 @@ class CollegeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:const ResetPassword(),
+      home: HomeView(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color.fromARGB(255, 29, 45, 58),
