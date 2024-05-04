@@ -38,12 +38,14 @@ class LandingViewBody extends StatelessWidget {
                 minWidth: MediaQuery.of(context).size.width * 0.4,
               ),
               MaterialButton(
+                focusColor: Colors.red,
                 onPressed: null,
                 child: const Text('Login'),
                 shape: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5)),
                 ),
                 color: Colors.white,
+                
                 height: 100,
                 minWidth: MediaQuery.of(context).size.width * 0.4,
               )
