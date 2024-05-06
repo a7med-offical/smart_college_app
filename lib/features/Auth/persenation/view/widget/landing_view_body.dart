@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_college_app/core/utils/Style.dart';
-import 'Button_landing_widget.dart';
+import 'package:smart_college_app/core/utils/button_utils.dart';
 
 class LandingViewBody extends StatelessWidget {
   const LandingViewBody({super.key});

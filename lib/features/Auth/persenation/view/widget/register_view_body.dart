@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smart_college_app/core/utils/Style.dart';
-import 'package:smart_college_app/features/Auth/persenation/view/widget/Button_landing_widget.dart';
+import 'package:smart_college_app/core/utils/button_utils.dart';
+import 'package:smart_college_app/core/utils/text_field_utils.dart';
 
-import 'text_field_widget.dart';
 
 class RegisterViewBody extends StatelessWidget {
   const RegisterViewBody({super.key});

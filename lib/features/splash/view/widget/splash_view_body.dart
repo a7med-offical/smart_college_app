@@ -12,8 +12,8 @@ class SplashViewBody extends StatefulWidget {
   State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProviderStateMixin {
-
+class _SplashViewBodyState extends State<SplashViewBody>
+    with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   // ignore: unused_field
   late Animation _animation;
@@ -30,24 +30,23 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
       child: FadeTransition(
         opacity: _animationController,
         child: Column(
-         mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('Assets/images/logo.png',height: 200,width:200),
+            Image.asset('Assets/images/logo.png', height: 240, width: 200),
             const Text(
               'College App',
-              style: Style.font20,
+              style: Style.font24,
             ),
-           const SizedBox(height:15),
+            const SizedBox(height: 15),
             const CircularProgressIndicator(
-            
               color: Color.fromARGB(255, 133, 84, 10),
-
             ),
           ],
         ),
       ),
     );
   }
+
   // ignore: non_constant_identifier_names
   void AnimationFunction() {
     _animationController =

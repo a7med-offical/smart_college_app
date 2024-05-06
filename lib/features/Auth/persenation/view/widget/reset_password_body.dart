@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:smart_college_app/core/utils/button_utils.dart';
+import 'package:smart_college_app/core/utils/text_field_utils.dart';
 
 import '../../../../../core/utils/Style.dart';
-import 'Button_landing_widget.dart';
-import 'text_field_widget.dart';
+
 
 class ResetPasswordBody extends StatelessWidget {
   const ResetPasswordBody({super.key});

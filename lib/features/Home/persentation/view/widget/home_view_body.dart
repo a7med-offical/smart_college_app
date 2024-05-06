@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:smart_college_app/core/utils/Style.dart';
-
 import '../../view_model/card_service_model.dart';
 import 'card_service_widget.dart';
 
@@ -40,5 +38,8 @@ final List<CardServiceModel> listCard = CardServiceModel.getDta();
         ),
       ],
     );
+
+    
   }
+
 }

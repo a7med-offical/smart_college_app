@@ -13,9 +13,9 @@ class CardServiceModel {
       CardServiceModel(textService: ' Exams', image: 'Assets/images/Exam.jpg'),
       CardServiceModel(
           textService: 'Payment', image: 'Assets/images/payment.jpg'),
-      CardServiceModel(textService: ' Exams', image: 'Assets/images/Exam.jpg'),
+      CardServiceModel(textService: ' Attendance', image: 'Assets/images/Exam.jpg'),
       CardServiceModel(
-          textService: 'Payment', image: 'Assets/images/payment.jpg'),
+          textService: 'other', image: 'Assets/images/payment.jpg'),
     ];
   }
 }
