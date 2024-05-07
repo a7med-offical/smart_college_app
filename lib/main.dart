@@ -19,7 +19,6 @@ class CollegeApp extends StatelessWidget {
     return MaterialApp(
       
       home: SplashView(),
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color.fromARGB(255, 29, 45, 58),
       ),
